@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
 
-String info = "";
+String info = ""; 
 
 void main() => runApp(LoginApp());
 
@@ -30,12 +30,12 @@ class _LoginPageState extends State<LoginPage> {
 
   // Simulated login function
   void _login() {
-    String email = _emailController.text;
+    String username = _emailController.text;
     String password = _passwordController.text;
 
     // Perform authentication here, e.g., check credentials, API call, etc.
     // For demonstration purposes, just print the credentials.
-    print("Username: $email");
+    print("Username: $username");
     print("Password: $password");
 
     // Navigate to the home screen after successful login
